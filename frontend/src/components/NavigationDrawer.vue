@@ -6,24 +6,31 @@
       fixed
       app
     >
-      <v-list dense>
-        <template v-for="item in items">
-          <v-layout
-            v-if="item.heading"
-            :key="item.heading"
-            row
-            align-center
-          >
-            <v-flex xs6>
-              <v-subheader v-if="item.heading">
-                {{ item.heading }}
-              </v-subheader>
-            </v-flex>
-            <v-flex xs6 class="text-xs-center">
-              <a href="#!" class="body-2 black--text">EDIT</a>
-            </v-flex>
-          </v-layout>
-          <v-list-tile v-else :key="item.text" :to="item.path">
+      <v-layout column align-center>
+        <v-flex class="mt-5">
+          <v-avatar size="100">
+            <img class="text-lg-center" src="/example-avatar.png">
+          </v-avatar>
+        </v-flex>
+        <v-flex class="mt-5">
+          <p class="headline text-capitalize">Example User</p>
+        </v-flex>
+        <v-flex class="mt-3">
+          <v-progress-circular
+            :value="20"
+            color="indigo darken-2"
+          ></v-progress-circular>
+        </v-flex>
+        <v-flex class="mt-3 mb-0">
+          <p class="subheading text-capitalize gray--text darken-2">Level 3</p>
+        </v-flex>
+        <v-flex class="mt-0 mb-3">
+          <p class="subheading text-uppercase">Finance manager</p>
+        </v-flex>
+      </v-layout>
+
+      <v-list>
+          <v-list-tile v-for="item in items" :key="item.text" router :to="item.path">
             <v-list-tile-action>
               <v-icon>{{ item.icon }}</v-icon>
             </v-list-tile-action>
@@ -33,7 +40,6 @@
               </v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
-        </template>
       </v-list>
     </v-navigation-drawer>
 
@@ -67,8 +73,10 @@ export default {
                 { icon: 'dashboard', text: 'Dashboard', path: '/dashboard'},
                 { icon: 'account_circle', text: 'Profile', path: '/profile'},
                 { icon: 'show_chart', text: 'Analysis', path: '/analysis'},
-                { icon: 'history', text: 'History', path: '/history'}
-            ]
+                { icon: 'history', text: 'History', path: '/history'},
+                { icon: 'person', text: 'Team', path: '/team'}
+            ],
+            valueDeterminate: 50
         }
     },
 }
