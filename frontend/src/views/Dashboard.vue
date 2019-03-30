@@ -1,13 +1,10 @@
 <template>
-  <HelloWorld />
+  <div class='dashboard'>
+    <h1 class="headline text-uppercase darkgrey--text">Dashboard</h1>
+  </div>
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
-
   export default {
-    components: {
-      HelloWorld
-    }
   }
 </script>

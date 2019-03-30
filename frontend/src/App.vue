@@ -3,7 +3,7 @@
     <NavigationDrawer 
       v-if="$route.path != '/login'"
     />
-    <v-content>
+    <v-content class="mx-4 mb-4 mt-4">
       <router-view />
     </v-content>
   </v-app>
