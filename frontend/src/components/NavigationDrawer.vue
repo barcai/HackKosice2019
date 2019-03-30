@@ -64,7 +64,7 @@ export default {
         return {
             drawer: null,
             items: [
-                { icon: 'dashboard', text: 'Home', path: '/home'},
+                { icon: 'dashboard', text: 'Dashboard', path: '/dashboard'},
                 { icon: 'history', text: 'Frequently contacted', path: '/about'}
             ]
         }
