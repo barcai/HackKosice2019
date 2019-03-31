@@ -1,5 +1,5 @@
 <template>
-  <div class='dashboard'>
+  <div class='analysis'>
     <h1 class="headline text-uppercase darkgrey--text">Analysis</h1>
     <v-container class="my-5">
 

@@ -13,7 +13,7 @@
           </v-avatar>
         </v-flex>
         <v-flex class="mt-5">
-          <p class="headline text-capitalize">Example User</p>
+          <p class="headline text-capitalize">{{ userName }}</p>
         </v-flex>
         <v-flex class="mt-3">
           <v-progress-circular
@@ -22,10 +22,10 @@
           ></v-progress-circular>
         </v-flex>
         <v-flex class="mt-3 mb-0">
-          <p class="subheading text-capitalize gray--text darken-2">Level 3</p>
+          <p class="subheading text-capitalize gray--text darken-2">Level {{ level }}</p>
         </v-flex>
         <v-flex class="mt-0 mb-3">
-          <p class="subheading text-uppercase">Finance manager</p>
+          <p class="subheading text-uppercase">{{ levelName }}r</p>
         </v-flex>
       </v-layout>
 
@@ -79,6 +79,17 @@ export default {
             valueDeterminate: 50
         }
     },
+    computed: {
+      level () {
+        return this.$store.getters.userLevel
+      },
+      levelName () {
+        return this.$store.getters.userLevelName
+      },
+      userName () {
+        return this.$store.getters.userName
+      }
+    }
 }
 </script>
 
