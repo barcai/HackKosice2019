@@ -25,7 +25,7 @@
           <p class="subheading text-capitalize gray--text darken-2">Level {{ level }}</p>
         </v-flex>
         <v-flex class="mt-0 mb-3">
-          <p class="subheading text-uppercase">{{ levelName }}r</p>
+          <p class="subheading text-uppercase">{{ levelName }}</p>
         </v-flex>
       </v-layout>
 

@@ -43,7 +43,7 @@
             class="ma-1"
             color="grey lighten-4"
           >
-            <AnalyticsCardHeader mainIcon="money" mainTitle="Spending Categories" />
+            <AnalyticsCardHeader mainIcon="money" mainTitle="Your Spending by Categories/Month" />
             <v-sheet min-width="300">
               <GChart
                 type="ColumnChart"
