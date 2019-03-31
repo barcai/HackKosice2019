@@ -22,18 +22,27 @@
       
       <v-card flat v-for="(transaction, index) in transactions" :key="index">
         <v-layout row wrap class="pa-3">
-          <v-flex xs6 sm4 md2 v-for="(value, field, index) in transaction" :key="index" class="pa-1 project">
-            <div :class="`${field == highlightedField ? 'font-weight-bold' : ''} caption grey--text`">{{ field }}</div>
+          <v-flex xs12 sm10 class="pa-1 project">
+            <v-layout row wrap class="pa-3">
+              <v-flex xs6 sm4 md2 v-for="(value, field, index) in transaction" :key="index" class="pa-1 project">
+                <div :class="`${field == highlightedField ? 'font-weight-bold' : ''} caption grey--text`">{{ field }}</div>
 
-            <div v-if="field == 'Date'">
-              <div :class="`${field == highlightedField ? 'font-weight-bold' : ''}`">
-                {{ value.toLocaleString('en-GB', { timeZone: 'UTC' }) }}
-              </div>
-            </div>
-            <div v-else>
-              <div :class="`${field == highlightedField ? 'font-weight-bold' : ''}`">
-                {{ value }}
-              </div>
+                <div v-if="field == 'Date'">
+                  <div :class="`${field == highlightedField ? 'font-weight-bold' : ''}`">
+                    {{ value.toLocaleString('en-GB', { timeZone: 'UTC' }) }}
+                  </div>
+                </div>
+                <div v-else>
+                  <div :class="`${field == highlightedField ? 'font-weight-bold' : ''}`">
+                    {{ value }}
+                  </div>
+                </div>
+              </v-flex>
+            </v-layout>
+          </v-flex>
+          <v-flex xs6 sm2 class="pa-1 project">
+            <div >
+              <v-chip large class="success white--text my-2 headline">+{{ Math.floor(Math.random() * transaction.Amount) }}</v-chip>
             </div>
           </v-flex>
         </v-layout>

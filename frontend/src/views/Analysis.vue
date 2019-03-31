@@ -29,7 +29,7 @@
             <v-sheet min-width="300">
               <GChart
                 type="PieChart"
-                :data="spendingCategoriesData"
+                :data="spendingCategoriesData2"
                 :options="pieChartOptions"
               />
             </v-sheet>
@@ -74,11 +74,10 @@
       return {
         // Array will be automatically processed with visualization.arrayToDataTable function
         transactionData: [
-          ['Month', 'Transfer', 'Card', 'Viamo'],
-          ['December', 1030, 540, 350],
-          ['January', 1000, 400, 200],
-          ['February', 1170, 460, 250],
-          ['March', 660, 1120, 300]
+          ['S', 'January', 'February', 'March'],
+          ['Transfer', 1030, 540, 350],
+          ['Card', 1000, 400, 200],
+          ['Viamo', 1170, 460, 250],
         ],
         spendingCategoriesData: [
           ['Month', 'Groceries', 'Rent', 'Restaurants'],
@@ -86,6 +85,12 @@
           ['January', 1000, 400, 200],
           ['February', 1170, 460, 250],
           ['March', 660, 1120, 300]
+        ],
+        spendingCategoriesData2: [
+          ['Type', 'January', 'February', 'March'],
+          ['Groceries', 1030, 540, 350],
+          ['Rent', 1000, 400, 200],
+          ['Restaurants', 1170, 460, 250],
         ],
         pieChartOptions: {
           is3D: true,

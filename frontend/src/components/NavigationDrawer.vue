@@ -17,9 +17,12 @@
         </v-flex>
         <v-flex class="mt-3">
           <v-progress-circular
-            :value="20"
+            :value="21"
             color="indigo darken-2"
           ></v-progress-circular>
+        </v-flex>
+        <v-flex class="mt-1">
+          <span class="caption">21.430/100.000</span>
         </v-flex>
         <v-flex class="mt-3 mb-0">
           <p class="subheading text-capitalize gray--text darken-2">Level {{ level }}</p>
@@ -50,7 +53,7 @@
     >
       <v-toolbar-title class="headline text-uppercase ml-0 pl-3">
         <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-        <span class="hidden-sm-and-down">Banky stuff</span>
+        <span class="hidden-sm-and-down">Bankee</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn

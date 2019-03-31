@@ -12,18 +12,18 @@
               <v-layout column align-center justify-center wrap>
                 <v-flex xs12>
                   <v-avatar size="100">
-                    <img class="text-lg-center" src="https://api.adorable.io/avatars/285/abott@adorable.png">
+                    <img class="text-lg-center" src="/example-avatar.png">
                   </v-avatar>
                 </v-flex>
               </v-layout>
             </v-card-title>
             <v-card-text class="text-xs-center">
-              <h1 class="card-title font-weight-light mb-2">{{ userName }}'s wife</h1>
-              <h6 class="category text-gray font-weight-thin">Level 5</h6>
-              <h2 class="subheading text-capitalize mb-3">Financial GURU</h2>
+              <h1 class="card-title font-weight-light mb-2">{{ userName }}</h1>
+              <h6 class="category text-gray font-weight-thin">Level {{ level }}</h6>
+              <h2 class="subheading text-capitalize mb-3">{{ levelName }}</h2>
               <v-list>
                 <v-list-tile
-                  v-for="bank in banks2"
+                  v-for="bank in banks1"
                   :key="bank.title"
                   avatar
                 >
@@ -58,18 +58,18 @@
               <v-layout column align-center justify-center wrap>
                 <v-flex xs12>
                   <v-avatar size="100">
-                    <img class="text-lg-center" src="/example-avatar.png">
+                    <img class="text-lg-center" src="https://api.adorable.io/avatars/285/abott@adorable.png">
                   </v-avatar>
                 </v-flex>
               </v-layout>
             </v-card-title>
             <v-card-text class="text-xs-center">
-              <h1 class="card-title font-weight-light mb-2">{{ userName }}</h1>
-              <h6 class="category text-gray font-weight-thin">Level {{ level }}</h6>
-              <h2 class="subheading text-capitalize mb-3">{{ levelName }}</h2>
+              <h1 class="card-title font-weight-light mb-2">{{ userName }}'s wife</h1>
+              <h6 class="category text-gray font-weight-thin">Level 5</h6>
+              <h2 class="subheading text-capitalize mb-3">Financial GURU</h2>
               <v-list>
                 <v-list-tile
-                  v-for="bank in banks1"
+                  v-for="bank in banks2"
                   :key="bank.title"
                   avatar
                 >
