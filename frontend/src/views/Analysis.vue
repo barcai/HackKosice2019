@@ -37,6 +37,24 @@
         </v-flex>
       </v-layout>
 
+      <v-layout row wrap align-center justify-space-between>
+        <v-flex xs12>
+          <v-card
+            class="ma-1"
+            color="grey lighten-4"
+          >
+            <AnalyticsCardHeader mainIcon="money" mainTitle="Spending Categories" />
+            <v-sheet min-width="300">
+              <GChart
+                type="ColumnChart"
+                :data="spendingCategoriesData"
+                :options="pieChartOptions"
+              />
+            </v-sheet>
+          </v-card>
+        </v-flex>
+      </v-layout>
+
               
       <!-- <GChart
       type="ColumnChart"
