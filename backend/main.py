@@ -1,3 +1,22 @@
+database = MySQLDatabase('my_app', user='app', password='db_password', host='10.1.0.8', port=3316)
+
+class BaseModel(Model):
+    class Meta:
+        database = database
+
+class User(BaseModel):
+    username = CharField(unique=True)
+    password = CharField()
+    experience = BigIntegerField()
+
+class AccountData(BaseModel):
+    username = CharField()
+   	debit_credit = CharField()
+    date = DateField()
+    amount = FloatField()
+    merchant_type = CharField()
+
+
 def http(request):
     """Responds to any HTTP request.
     Args:
@@ -72,11 +91,6 @@ def getTopExpense():
 
 def initDB():
 
-	database = SqliteDatabase(DATABASE)
-
-	class BaseModel(Model):
-    	class Meta:
-        	database = database
 
 
 
