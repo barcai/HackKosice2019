@@ -70,7 +70,6 @@ export default {
         return {
             drawer: null,
             items: [
-                { icon: 'dashboard', text: 'Dashboard', path: '/dashboard'},
                 { icon: 'account_circle', text: 'Profile', path: '/profile'},
                 { icon: 'show_chart', text: 'Analysis', path: '/analysis'},
                 { icon: 'history', text: 'History', path: '/history'},
