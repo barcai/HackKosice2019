@@ -4,46 +4,46 @@
     <br>
      <v-layout row>
         <v-flex xs6>
-        	<v-card>
-	          <v-card-title>
-	          <div class="item"><h3 class="headline text-uppercase darkgrey--text">you spending</h3></div> 
-	          </v-card-title>
-	          <v-card-title>
-	          <div class="item"><h1 class="headline text-uppercase darkgrey--text">$210</h1></div> 
-	          </v-card-title>
+          <v-card>
+            <v-card-title>
+            <div class="item"><h3 class="headline text-uppercase darkgrey--text">you spending</h3></div> 
+            </v-card-title>
+            <v-card-title>
+            <div class="item"><h1 class="headline text-uppercase darkgrey--text">$210</h1></div> 
+            </v-card-title>
           </v-card>
         </v-flex>
         <v-flex xs6>
           <v-card>
-	          <v-card-title>
-	          <div class="item"><h3 class="headline text-uppercase darkgrey--text">Saving on {Wedding}</h3></div> 
-	          </v-card-title>
-	          <v-card-title>
-	          <div class="item"><h1 class="headline text-uppercase darkgrey--text">$2200 of $4000</h1></div> 
-	          </v-card-title>
+            <v-card-title>
+            <div class="item"><h3 class="headline text-uppercase darkgrey--text">Saving on {Wedding}</h3></div> 
+            </v-card-title>
+            <v-card-title>
+            <div class="item"><h1 class="headline text-uppercase darkgrey--text">$2200 of $4000</h1></div> 
+            </v-card-title>
           </v-card>
         </v-flex>
       </v-layout>
     <br>
      <v-layout row>
         <v-flex xs6>
-        	<v-card>
-	          <v-card-title>
-	          <div class="item"><h3 class="headline text-uppercase darkgrey--text">you spending</h3></div> 
-	          </v-card-title>
-	          <v-card-title>
-	          <div class="item"><h1 class="headline text-uppercase darkgrey--text">$210</h1></div> 
-	          </v-card-title>
+          <v-card>
+            <v-card-title>
+            <div class="item"><h3 class="headline text-uppercase darkgrey--text">you spending</h3></div> 
+            </v-card-title>
+            <v-card-title>
+            <div class="item"><h1 class="headline text-uppercase darkgrey--text">$210</h1></div> 
+            </v-card-title>
           </v-card>
         </v-flex>
         <v-flex xs6>
           <v-card>
-	          <v-card-title>
-	          <div class="item"><h3 class="headline text-uppercase darkgrey--text">you spending</h3></div> 
-	          </v-card-title>
-	          <v-card-title>
-	          <div class="item"><h1 class="headline text-uppercase darkgrey--text">$210</h1></div> 
-	          </v-card-title>
+            <v-card-title>
+            <div class="item"><h3 class="headline text-uppercase darkgrey--text">you spending</h3></div> 
+            </v-card-title>
+            <v-card-title>
+            <div class="item"><h1 class="headline text-uppercase darkgrey--text">$210</h1></div> 
+            </v-card-title>
           </v-card>
         </v-flex>
       </v-layout>
@@ -56,7 +56,7 @@
 }
 
 .item {
-	text-align: center;
+  text-align: center;
   min-height: 50px;
   min-width: 300px;
   margin: 10px;
